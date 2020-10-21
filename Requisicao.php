@@ -3,7 +3,7 @@
 class Requisicao{
 
     // URL com a instância do Sugar
-    private $instance_url = 'https://lftm.sugarondemand.com/rest/v11/';
+    private $instance_url = '';
 
     /**
      *  Método POST para autenticação no SugarCRM, que devolve o token de acesso.
@@ -15,12 +15,12 @@ class Requisicao{
         $url = $this->instance_url . 'oauth2/token';
 
         // Configura os parâmetros necessários para autenticação
-        $auth = array(
-            'grant_type' => 'password',
-            'client_id' => 'sugar',
-            'username' => 'api.lftm',
-            'password' => 'Lftm@api2018',
-            'platform' => 'api_rd'
+        $auth = array(            
+            'grant_type' => '',
+            'client_id' => '',
+            'username' => '',
+            'password' => '',
+            'platform' => ''
         );
 
         // Inicia e configura as opções do CURL
